@@ -13,9 +13,9 @@ var config = {
     isSecure: true
     //webIntegrationId: 'web-integration-id-here' // only needed in QCS and QSEoK
 };
-//to avoid errors in workbench: you can remove this when you have added an app
+//to av//oid errors in workbench: you can remove this when you have added an app
 var app;
-require( ["js/qlik"], function ( qlik ) {
+/*require( ["js/qlik"], function ( qlik ) {
 
 	var control = false;
 	qlik.setOnError( function ( error ) {
@@ -103,4 +103,4 @@ $( ".qvobject" ).each( function () {
 	}
 	
 
-} );
+} );*/
