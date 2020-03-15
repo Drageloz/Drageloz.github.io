@@ -1,0 +1,36 @@
+/* CSS */
+body{
+	padding:0px;
+	margin:0px;
+}
+#dash1{
+	background-image: url("https://get.pxhere.com/photo/man-person-technology-professional-profession-medicine-health-science-mask-background-laboratory-oxygen-doctor-service-gloves-medical-blouse-virus-technician-surgeon-scientist-treatment-of-disease-medical-world-pathologist-microbiologist-searcher-caregivers-protective-equipment-research-center-microbes-anesthesiologist-surgical-technologist-operating-theater-disease-prevention-medical-equipment-healthcare-science-medical-examiner-medical-glove-magnifying-glasses-isolation-of-bacteria-sterile-room-surgeon's-assistant-1412608.jpg");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	opacity: 0.3;
+}
+
+.centerTextPanel{
+	position: absolute;
+    top: 20vw;	
+    width: 60%;
+	color: black;
+}
+
+#QV07,#QV08{
+	height: 10vh;
+}
+
+#QV01{
+	height: 75vh;
+}
+
+#QV04, #QV06{
+	height: 38vh;
+}
+
+#QV11{
+	width: 100%;
+	height: 70px;
+}
