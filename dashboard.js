@@ -62,7 +62,7 @@ var dashboard2 =
 		'</div>'+
 		'</div>';
 		
-var dashboard2 = '<div class="col-sm-9">'+
+var dashboard3 = '<div class="col-sm-9">'+
 		'<div class="alert alert-danger alert-dismissible" role="alert" style="display:none">'+
 		'<button type="button" class="close" id="closeerr" aria-label="Close"><span aria-hidden="true">×</span></button>'+
 		'<span id="errmsg"></span>'+
@@ -101,14 +101,8 @@ selectElement.addEventListener('change', (event) => {
 		document.getElementById("dashboard").innerHTML = dashboard0;
 	}
 	if(selectElement.selectedIndex==1){
-		var citiesControl = document.createElement('div');
-		citiesControl.className = "qvobject";
-		citiesControl.id = "QV11"
 		document.getElementById("dashboard").innerHTML = dashboard1;
-		var referenceCities = document.getElementById("formGroupPrincipal");
-		referenceCities.parentNode.insertBefore(citiesControl, referenceCities.nextSibling);
-		/*$.loadScript('dashboardINVIMA.js', function(){
-		});*/
+		
 	}
 	if(selectElement.selectedIndex==2){
 		document.getElementById("dashboard").innerHTML = dashboard2;
