@@ -114,3 +114,13 @@ selectElement.addEventListener('change', (event) => {
 		});
 	}
 });
+
+var request = require("request");
+var options = { method: 'POST',
+    url: 'https://dev-pkzpys7f.auth0.com/oauth/token',
+    headers: { 'content-type': 'application/json' },
+	body: '{"client_id":"fyguoRtREtmEPiFUh4C91QlXbYohkRAJ","client_secret":"Gcvt76w2QbOwDiTJ_HgVSxtjiFgeqahG0o-O9oF9LZVjKbf0-xHIi5aXZ-cjLigb","audience":"qlik.api","grant_type":"client_credentials"}' };
+request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+    console.log(body);
+});
