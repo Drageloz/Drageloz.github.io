@@ -36,8 +36,7 @@ var dashboard0 = '<div class="col-sm-9" style="padding:15%; height: 100vh;" id="
 				'<h6 style="font:25px normal Segoe UI; padding-left:10%">Las normas científicas, técnicas y administrativas para la investigación en salud están reguladas por la resolución 8430 de 1993, el siguiente programa espera ser una ayuda en las elecciones que como empresa lleven a la mejor eficiencia en el desarrollo de sus protocolos.</h6>'+
 				'</div>';
 				
-var dashboard1 = '<frame src="https://drageloz.us.qlikcloud.com/single/?appid=8b8c56c3-f568-41f5-9cd8-6c7770031840&sheet=967f58e4-f464-4aae-8bec-336ca37b1e16&opt=ctxmenu,currsel&select=clearall" style="border:none;width:100%;height:100%;"></frame>'
-
+var dashboard1 = '<iframe src="https://drageloz.us.qlikcloud.com/single/?appid=8b8c56c3-f568-41f5-9cd8-6c7770031840&sheet=967f58e4-f464-4aae-8bec-336ca37b1e16&opt=ctxmenu,currsel&select=clearall" style="border:none;width:100%;height:100%;"></iframe>'
 var dashboard2 =
 		'<div class="col-sm-9">'+
 		'<h1 style="text-align: center;">TIEMPO POR CIUDAD</h1>'+
@@ -107,8 +106,8 @@ selectElement.addEventListener('change', (event) => {
 		document.getElementById("dashboard").innerHTML = dashboard1;
 		var referenceCities = document.getElementById("formGroupPrincipal");
 		referenceCities.parentNode.insertBefore(citiesControl, referenceCities.nextSibling);
-		$.loadScript('dashboardINVIMA.js', function(){
-		});
+		/*$.loadScript('dashboardINVIMA.js', function(){
+		});*/
 	}
 	if(selectElement.selectedIndex==2){
 		document.getElementById("dashboard").innerHTML = dashboard2;
@@ -116,3 +115,6 @@ selectElement.addEventListener('change', (event) => {
 		});
 	}
 });
+
+
+

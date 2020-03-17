@@ -15,7 +15,7 @@ var config = {
 };
 //to av//oid errors in workbench: you can remove this when you have added an app
 var app;
-/*require( ["js/qlik"], function ( qlik ) {
+require( ["https://drageloz.us.qlikcloud.com/js/qlik"], function ( qlik ) {
 
 	var control = false;
 	qlik.setOnError( function ( error ) {
@@ -103,4 +103,4 @@ $( ".qvobject" ).each( function () {
 	}
 	
 
-} );*/
+} );
