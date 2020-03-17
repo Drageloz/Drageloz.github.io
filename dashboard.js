@@ -37,10 +37,7 @@ var dashboard0 = '<div class="col-sm-9" style="padding:15%; height: 100vh;" id="
 				'</div>';
 				
 var dashboard1 = '<iframe src="https://drageloz.us.qlikcloud.com/single/?appid=8b8c56c3-f568-41f5-9cd8-6c7770031840&sheet=967f58e4-f464-4aae-8bec-336ca37b1e16&opt=ctxmenu,currsel&select=clearall" style="border:none;width:100%;height:100%;"></iframe>'
-<<<<<<< HEAD
-=======
 
->>>>>>> 854650f593804f79e4091e3c33c572ba0d1beae8
 var dashboard2 =
 		'<div class="col-sm-9">'+
 		'<h1 style="text-align: center;">TIEMPO POR CIUDAD</h1>'+
@@ -105,14 +102,11 @@ selectElement.addEventListener('change', (event) => {
 	}
 	if(selectElement.selectedIndex==1){
 		document.getElementById("dashboard").innerHTML = dashboard1;
-<<<<<<< HEAD
 		var referenceCities = document.getElementById("formGroupPrincipal");
 		referenceCities.parentNode.insertBefore(citiesControl, referenceCities.nextSibling);
 		/*$.loadScript('dashboardINVIMA.js', function(){
 		});*/
-=======
-		
->>>>>>> 854650f593804f79e4091e3c33c572ba0d1beae8
+
 	}
 	if(selectElement.selectedIndex==2){
 		document.getElementById("dashboard").innerHTML = dashboard2;
@@ -120,9 +114,3 @@ selectElement.addEventListener('change', (event) => {
 		});
 	}
 });
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 854650f593804f79e4091e3c33c572ba0d1beae8
