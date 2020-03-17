@@ -2,6 +2,8 @@
 body{
 	padding:0px;
 	margin:0px;
+	width: 95%;
+    margin: auto;
 }
 #dash1{
 	background-image: url("https://get.pxhere.com/photo/man-person-technology-professional-profession-medicine-health-science-mask-background-laboratory-oxygen-doctor-service-gloves-medical-blouse-virus-technician-surgeon-scientist-treatment-of-disease-medical-world-pathologist-microbiologist-searcher-caregivers-protective-equipment-research-center-microbes-anesthesiologist-surgical-technologist-operating-theater-disease-prevention-medical-equipment-healthcare-science-medical-examiner-medical-glove-magnifying-glasses-isolation-of-bacteria-sterile-room-surgeon's-assistant-1412608.jpg");
@@ -33,4 +35,11 @@ body{
 #QV11{
 	width: 100%;
 	height: 70px;
+}
+
+iframe{
+	height: 90vh;
+    border: none;
+    padding: 0px;
+    margin: 0px;
 }
