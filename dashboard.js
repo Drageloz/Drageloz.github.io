@@ -106,11 +106,6 @@ selectElement.addEventListener('change', (event) => {
 	}
 	if(selectElement.selectedIndex==1){
 		document.getElementById("dashboard").innerHTML = dashboard1;
-		var referenceCities = document.getElementById("formGroupPrincipal");
-		referenceCities.parentNode.insertBefore(citiesControl, referenceCities.nextSibling);
-		/*$.loadScript('dashboardINVIMA.js', function(){
-		});*/
-
 	}
 	if(selectElement.selectedIndex==2){
 		document.getElementById("dashboard").innerHTML = dashboard2;
