@@ -38,9 +38,9 @@ var dashboard0 = '<div class="col-sm-9" style="padding:15%; height: 100vh;" id="
 				
 var dashboard1 = ' <h1 style="position: absolute; top: 50px; z-index: 1; margin: 0px 12%;">TIEMPO EMPLEADO POR CIUDAD</h1>'+
 '<h4 style="position: absolute; top: 90px; z-index: 1; margin: 0px 10%;">Tiempo promedio en el que una institución se demora en completar el protocolo</h4>'+
-'<div style="position: absolute; top: 25vh; z-index: 1; margin: 0px 60px;">Promedio duración total de protocolos en días</div>'
+'<div style="position: absolute; top: 25vh; z-index: 1; margin: 0px 60px;">Promedio duración total de protocolos en días</div>'+
 '<div style="position: absolute; top: 25vh; z-index: 1; right: 350px; margin: 0px 130px 0px 0px;">Numero de instituciones</div>'+
-'<iframe class="col-sm-9" src="https://drageloz.us.qlikcloud.com/single/?appid=8b8c56c3-f568-41f5-9cd8-6c7770031840&amp;sheet=967f58e4-f464-4aae-8bec-336ca37b1e16&amp;opt=ctxmenu,currsel&amp;select=clearall"></iframe>'
+'<iframe class="col-sm-9" src="https://drageloz.us.qlikcloud.com/single/?appid=8b8c56c3-f568-41f5-9cd8-6c7770031840&amp;sheet=967f58e4-f464-4aae-8bec-336ca37b1e16&amp;opt=ctxmenu,currsel&amp;select=clearall"></iframe>';
 
 var dashboard2 =
 		'<div class="col-sm-9">'+
