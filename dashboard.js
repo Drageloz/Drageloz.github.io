@@ -43,7 +43,7 @@ var dashboard0 = '<div class="col-sm-9" style="padding:15%; height: 100vh;" id="
 				'<h6 style="font:25px normal Segoe UI; padding-left:10%">Las normas científicas, técnicas y administrativas para la investigación en salud están reguladas por la resolución 8430 de 1993, el siguiente programa espera ser una ayuda en las elecciones que como empresa lleven a la mejor eficiencia en el desarrollo de sus protocolos.</h6>'+
 				'</div>';
 				
-var dashboard1 = ' <h1 style="position: absolute; top: 50px; z-index: 1; margin: 0px 12%;">TIEMPO EMPLEADO POR CIUDAD</h1>'+
+var dashboard1 = ' <h1 style="position: absolute; top: 50px; z-index: 1; margin: 0px 12%;">TIEMPO EMPLEADO POR INSTITUCIÓN</h1>'+
 '<div style="position: absolute;top: 90px;z-index: 1;margin: 0px 15%;">Tiempo promedio en el que una institución se demora en completar el protocolo</div>'+
 '<div style="position: absolute;top: 25vh;z-index: 1;margin: 0px 60px;font-weight: 780;color: grey;">Promedio duración total de protocolos en días</div>'+
 '<div style="position: absolute; top: 25vh; z-index: 1; right: 350px; margin: 0px 130px 0px 0px;font-weight: 780;color: grey;">Numero de instituciones</div>';
@@ -75,9 +75,6 @@ document.getElementById("dashboard").innerHTML = charging;
 setTimeout(() => {  
 	document.getElementById("panel").innerHTML = panel;
 	var selectElement = document.getElementById('sel1');
-
-
-
 	document.getElementById("dashboard").innerHTML = dashboard0;
 
 	selectElement.addEventListener('change', (event) => {
@@ -97,27 +94,5 @@ setTimeout(() => {
 		document.getElementById("qlik").style.display="none";
 	}
 });
-}, 2000);
+}, 5000);
 
-
-//Create Interactivity among dashboards
-jQuery.loadScript = function (url, callback) {
-    jQuery.ajax({
-        url: url,
-        dataType: 'script',
-        success: callback,
-        async: true
-    });
-}
-
-
-
-// var request = require("request");
-// var options = { method: 'POST',
-//     url: 'https://dev-pkzpys7f.auth0.com/oauth/token',
-//     headers: { 'content-type': 'application/json' },
-// 	body: '{"client_id":"fyguoRtREtmEPiFUh4C91QlXbYohkRAJ","client_secret":"Gcvt76w2QbOwDiTJ_HgVSxtjiFgeqahG0o-O9oF9LZVjKbf0-xHIi5aXZ-cjLigb","audience":"qlik.api","grant_type":"client_credentials"}' };
-// request(options, function (error, response, body) {
-//     if (error) throw new Error(error);
-//     console.log(body);
-// });
