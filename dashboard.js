@@ -13,6 +13,13 @@
 
 // JavaScript
 //create peace of codes in html
+var charging = '<div id="charging" class="col-sm-12">'+
+		'<img style="width:25%; margin: 30vh auto; display: block;" src="https://www.intersoftware.org.co/sites/default/files/logos_marcas_internas/logos-21.png">'+
+		'<div id="contenedor">'+
+            '<div class="loader" id="loader">Loading...</div>'+
+ 		'</div>'+
+	'</div>';
+
 var panel = '<div class="col-sm-3" style="height: 100vh; border-left: 10px solid red">'+
 		'<img style="width:80%; margin: auto; display: block; margin-top: 120px;" src="https://www.intersoftware.org.co/sites/default/files/logos_marcas_internas/logos-21.png">'+
 		'<h3 style="font:normal bold 23px Segoe UI; text-align: center">Seleccione su interés:</h3>'+
@@ -41,11 +48,7 @@ var dashboard1 = ' <h1 style="position: absolute; top: 50px; z-index: 1; margin:
 '<div style="position: absolute;top: 25vh;z-index: 1;margin: 0px 60px;font-weight: 780;color: grey;">Promedio duración total de protocolos en días</div>'+
 '<div style="position: absolute; top: 25vh; z-index: 1; right: 350px; margin: 0px 130px 0px 0px;font-weight: 780;color: grey;">Numero de instituciones</div>';
 
-var dashboard2 ='<h1 style="position: absolute; top: 50px; z-index: 1; margin: 0px 12%;">TIEMPO EMPLEADO POR CIUDAD</h1>'+
-'<div style="position: absolute;top: 90px;z-index: 1;margin: 0px 15%;">Tiempo promedio en el que una institución se demora en completar el protocolo</div>'+
-'<div style="position: absolute;top: 25vh;z-index: 1;margin: 0px 60px;font-weight: 780;color: grey;">Promedio duración total de protocolos en días</div>'+
-'<div style="position: absolute; top: 25vh; z-index: 1; right: 350px; margin: 0px 130px 0px 0px;font-weight: 780;color: grey;">Numero de instituciones</div>';
-
+var dashboard2 ='<h1 style="position: absolute; top: 50px; z-index: 1; margin: 0px 12%;">TIEMPO EMPLEADO POR CIUDAD</h1>';
 		
 		
 var dashboard3 = '<div class="col-sm-9">'+
@@ -67,22 +70,17 @@ var dashboard3 = '<div class="col-sm-9">'+
 		'</div>'
 		'</div>';
 
-document.getElementById("panel").innerHTML = panel;
-var selectElement = document.getElementById('sel1');
 
-//Create Interactivity among dashboards
-jQuery.loadScript = function (url, callback) {
-    jQuery.ajax({
-        url: url,
-        dataType: 'script',
-        success: callback,
-        async: true
-    });
-}
+document.getElementById("dashboard").innerHTML = charging;
+setTimeout(() => {  
+	document.getElementById("panel").innerHTML = panel;
+	var selectElement = document.getElementById('sel1');
 
 
-document.getElementById("dashboard").innerHTML = dashboard0;
-selectElement.addEventListener('change', (event) => {
+
+	document.getElementById("dashboard").innerHTML = dashboard0;
+
+	selectElement.addEventListener('change', (event) => {
 	if(selectElement.selectedIndex==0){
 		document.getElementById("dashboard").innerHTML = dashboard0;
 		document.getElementById("qlik").style.display="none";
@@ -99,6 +97,20 @@ selectElement.addEventListener('change', (event) => {
 		document.getElementById("qlik").style.display="none";
 	}
 });
+}, 2000);
+
+
+//Create Interactivity among dashboards
+jQuery.loadScript = function (url, callback) {
+    jQuery.ajax({
+        url: url,
+        dataType: 'script',
+        success: callback,
+        async: true
+    });
+}
+
+
 
 // var request = require("request");
 // var options = { method: 'POST',
