@@ -41,29 +41,12 @@ var dashboard1 = ' <h1 style="position: absolute; top: 50px; z-index: 1; margin:
 '<div style="position: absolute;top: 25vh;z-index: 1;margin: 0px 60px;font-weight: 780;color: grey;">Promedio duración total de protocolos en días</div>'+
 '<div style="position: absolute; top: 25vh; z-index: 1; right: 350px; margin: 0px 130px 0px 0px;font-weight: 780;color: grey;">Numero de instituciones</div>';
 
-var dashboard2 =
-		'<div class="col-sm-9">'+
-		'<h1 style="text-align: center;">TIEMPO POR CIUDAD</h1>'+
-		'<h4 style="text-align: center;">Tiempo promedio en el que una institución se demora en completar el protocolo</h4>'+
-		'<div class="alert alert-danger alert-dismissible" role="alert" style="display:none">'+
-		'<button type="button" class="close" id="closeerr" aria-label="Close"><span aria-hidden="true">×</span></button>'+
-		'<span id="errmsg"></span>'+
-		'</div>'+
-		'<div class="row">'+
-		'<div class="col-sm-6 qvobject" id="QV07">'+
-		'</div>'+
-		'<div class="col-sm-6 qvobject" id="QV08">'+
-		'</div>'+
-		'</div>'+
-		'<div class="row">'+
-		'<div class="col-sm-6 qvobject" id="QV01">'+
-		'</div>'+
-		'<div class="col-sm-6">'+
-		'<div class="qvobject" id="QV04"></div>'+
-		'<div class="qvobject" id="QV06"></div>'+
-		'</div>'+
-		'</div>'+
-		'</div>';
+var dashboard2 ='<h1 style="position: absolute; top: 50px; z-index: 1; margin: 0px 12%;">TIEMPO EMPLEADO POR CIUDAD</h1>'+
+'<div style="position: absolute;top: 90px;z-index: 1;margin: 0px 15%;">Tiempo promedio en el que una institución se demora en completar el protocolo</div>'+
+'<div style="position: absolute;top: 25vh;z-index: 1;margin: 0px 60px;font-weight: 780;color: grey;">Promedio duración total de protocolos en días</div>'+
+'<div style="position: absolute; top: 25vh; z-index: 1; right: 350px; margin: 0px 130px 0px 0px;font-weight: 780;color: grey;">Numero de instituciones</div>';
+
+		
 		
 var dashboard3 = '<div class="col-sm-9">'+
 		'<div class="alert alert-danger alert-dismissible" role="alert" style="display:none">'+
@@ -102,15 +85,18 @@ document.getElementById("dashboard").innerHTML = dashboard0;
 selectElement.addEventListener('change', (event) => {
 	if(selectElement.selectedIndex==0){
 		document.getElementById("dashboard").innerHTML = dashboard0;
+		document.getElementById("qlik").style.display="none";
+		document.getElementById("qlik1").style.display="none";
 	}
 	if(selectElement.selectedIndex==1){
 		document.getElementById("dashboard").innerHTML = dashboard1;
 		document.getElementById("qlik").style.display="block";
+		document.getElementById("qlik1").style.display="none";
 	}
 	if(selectElement.selectedIndex==2){
 		document.getElementById("dashboard").innerHTML = dashboard2;
-		$.loadScript('dashboardINVIMA.js', function(){
-		});
+		document.getElementById("qlik1").style.display="block";
+		document.getElementById("qlik").style.display="none";
 	}
 });
 
