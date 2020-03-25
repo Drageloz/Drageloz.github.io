@@ -73,8 +73,9 @@ setTimeout(() => {
 	}
 	if(selectElement.selectedIndex==2){
 		document.getElementById("dashboard").innerHTML = dashboard2;
-		document.getElementById("qlik1").style.display="block";
+		document.getElementById("qlik1").style.display="none";
 		document.getElementById("qlik").style.display="none";
+		document.getElementById("qlik2").style.display="block";
 	}
 });
 }, 1000);
