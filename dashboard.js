@@ -97,6 +97,9 @@ document.getElementById("btnCollapse").addEventListener('click', (event) => {
 		setTimeout(() => { 
 			document.getElementById("panel").className = "col-sm-3 collapse1";
 			document.getElementById("dashboard").className = "col-sm-12";
+			for(var i=0; i < document.getElementsByTagName("iframe").length; i++){
+				document.getElementsByTagName("iframe")[i].style.width = "97%"
+		}
 		}, 0.45);
 		inicio = 1;
 	}
@@ -106,6 +109,9 @@ document.getElementById("btnCollapse").addEventListener('click', (event) => {
 		setTimeout(() => { 
 			document.getElementById("panel").className = "col-sm-3 collapse1 show";
 			document.getElementById("dashboard").className = "col-sm-9";
+			for(var i=0; i < document.getElementsByTagName("iframe").length; i++){
+				document.getElementsByTagName("iframe")[i].style.width = "0%"
+		}
 		}, 0.45);
 	}
 });
