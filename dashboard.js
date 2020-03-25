@@ -54,8 +54,9 @@ var dashboard1 = ' <h1 style="position: absolute; top: 50px; z-index: 1; margin:
 var dashboard2 ='<h1 style="position: absolute; top: 50px; z-index: 1; margin: 0px 12%;">TIEMPO EMPLEADO POR CIUDAD</h1>';
 		
 
-document.getElementById("dashboard").innerHTML = charging;
+document.getElementById("charging").innerHTML = charging;
 setTimeout(() => {  
+	document.getElementById("charging").style.display = "none";
 	document.getElementById("panel").innerHTML = panel;
 	var selectElement = document.getElementById('sel1');
 	document.getElementById("dashboard").innerHTML = dashboard0;
@@ -65,18 +66,46 @@ setTimeout(() => {
 		document.getElementById("dashboard").innerHTML = dashboard0;
 		document.getElementById("qlik").style.display="none";
 		document.getElementById("qlik1").style.display="none";
+		document.getElementById("qlik2").style.display="none";
 	}
 	if(selectElement.selectedIndex==1){
 		document.getElementById("dashboard").innerHTML = dashboard1;
 		document.getElementById("qlik").style.display="block";
 		document.getElementById("qlik1").style.display="none";
+		document.getElementById("qlik2").style.display="none";
 	}
 	if(selectElement.selectedIndex==2){
 		document.getElementById("dashboard").innerHTML = dashboard2;
-		document.getElementById("qlik1").style.display="none";
 		document.getElementById("qlik").style.display="none";
+		document.getElementById("qlik1").style.display="block";
+		document.getElementById("qlik2").style.display="none";
+	}
+	if(selectElement.selectedIndex==3){
+		document.getElementById("dashboard").innerHTML = dashboard3;
+		document.getElementById("qlik").style.display="none";
+		document.getElementById("qlik1").style.display="none";
 		document.getElementById("qlik2").style.display="block";
 	}
 });
 }, 1000);
+var inicio = 0;
+document.getElementById("btnCollapse").addEventListener('click', (event) => {
 
+	
+	if(inicio==0){
+		document.getElementById("panel").className = "collapsing";
+		setTimeout(() => { 
+			document.getElementById("panel").className = "col-sm-3 collapse1";
+			document.getElementById("dashboard").className = "col-sm-12";
+		}, 0.45);
+		inicio = 1;
+	}
+	else{
+		inicio = 0;
+		document.getElementById("panel").className = "collapsing";
+		setTimeout(() => { 
+			document.getElementById("panel").className = "col-sm-3 collapse1 show";
+			document.getElementById("dashboard").className = "col-sm-9";
+		}, 0.45);
+	}
+});

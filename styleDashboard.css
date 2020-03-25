@@ -51,6 +51,28 @@ iframe{
     width: 70%;
 }
 
+.collapse1.show{
+	display: block;
+}
+
+.collapse1{
+	display: none;
+}
+
+.collapsing{
+	position: relative;
+	width: 0px;
+	overflow: hidden;
+	transition: width 0.35s ease;
+}
+
+.collapsing1{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	transition: width 0.35s ease;
+}
+
 .loader {
   font-size: 10px;
   margin: 1% auto;
