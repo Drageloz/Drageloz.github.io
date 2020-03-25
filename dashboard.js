@@ -20,8 +20,9 @@ var charging = '<div id="charging" class="col-sm-12">'+
  		'</div>'+
 	'</div>';
 
-var panel = '<div class="col-sm-3" style="height: 100vh; border-left: 10px solid red">'+
-		'<img style="width:80%; margin: auto; display: block; margin-top: 120px;" src="https://www.intersoftware.org.co/sites/default/files/logos_marcas_internas/logos-21.png">'+
+var panel = '<div style="height: 100vh; border-left: 10px solid red">'+
+		'<div class="container">'+
+		'<img style="width:80%; margin: auto; display: block; padding-top: 120px;" src="https://www.intersoftware.org.co/sites/default/files/logos_marcas_internas/logos-21.png">'+
 		'<h3 style="font:normal bold 23px Segoe UI; text-align: center">Seleccione su interés:</h3>'+
 		'<form id="formGroupPrincipal">'+
 		'<div class="form-group">'+
@@ -32,11 +33,12 @@ var panel = '<div class="col-sm-3" style="height: 100vh; border-left: 10px solid
 		'</select>'+
 		'</div>'+
 		'</form>'+
-		'<h6 id="copyright" style="width:80%; margin: auto; text-align: center; position: relative; top: 100px;">'+
+		'<h6 id="copyright" style="width:80%; margin: auto; text-align: center; position: relative; top: 100px; font-weight:100; font: 12px black Times New Roman, sans-serif;">'+
 		'ESTE PROGRAMA ES DESARROLLADO COMO DEMOSTRACIÓN DE UN PRODUCTO Y NO PUEDE SER COPIADO NI EDITADO O DISTRIBUIDO SIN LA AUTORIZACIÓN EXPLICITA DE SU CREADOR'+
-		'</h6>';
+		'</h6>'+
+		'</div>';
 
-var dashboard0 = '<div class="col-sm-9" style="padding:15%; height: 100vh;" id="dash1">'+
+var dashboard0 = '<div style="padding:15%; height: 100vh;" id="dash1">'+
 				'</div>'+
 				'<div class="centerTextPanel">'+
 				'<h2 style="width:80%; padding-left:10%; font:30px bold Segoe UI;">PROTOCOLOS Y REGULACIÓN DE INVIMA</h2>'+
@@ -46,30 +48,10 @@ var dashboard0 = '<div class="col-sm-9" style="padding:15%; height: 100vh;" id="
 var dashboard1 = ' <h1 style="position: absolute; top: 50px; z-index: 1; margin: 0px 12%;">TIEMPO EMPLEADO POR INSTITUCIÓN</h1>'+
 '<div style="position: absolute;top: 90px;z-index: 1;margin: 0px 15%;">Tiempo promedio en el que una institución se demora en completar el protocolo</div>'+
 '<div style="position: absolute;top: 25vh;z-index: 1;margin: 0px 60px;font-weight: 780;color: grey;">Promedio duración total de protocolos en días</div>'+
-'<div style="position: absolute; top: 25vh; z-index: 1; right: 350px; margin: 0px 130px 0px 0px;font-weight: 780;color: grey;">Numero de instituciones</div>';
+'<div style="position: absolute; top: 25vh; z-index: 1; right: 50px; margin: 0px 130px 0px 0px;font-weight: 780;color: grey;">Numero de instituciones</div>';
 
 var dashboard2 ='<h1 style="position: absolute; top: 50px; z-index: 1; margin: 0px 12%;">TIEMPO EMPLEADO POR CIUDAD</h1>';
 		
-		
-var dashboard3 = '<div class="col-sm-9">'+
-		'<div class="alert alert-danger alert-dismissible" role="alert" style="display:none">'+
-		'<button type="button" class="close" id="closeerr" aria-label="Close"><span aria-hidden="true">×</span></button>'+
-		'<span id="errmsg"></span>'+
-		'</div>'+
-		'<div class="row">'+
-		'<div class="col-sm-8 qvobject" id="QV05">'+
-		'</div>'+
-		'<div class="col-sm-4 qvobject" id="QV06">'+
-		'</div>'+
-		'</div>'+
-		'<div class="row">'+
-		'<div class="col-sm-4 qvobject" id="QV03">'+
-		'</div>'+
-		'<div class="col-sm-8 qvobject" id="QV04">'+
-		'</div>'+
-		'</div>'
-		'</div>';
-
 
 document.getElementById("dashboard").innerHTML = charging;
 setTimeout(() => {  
@@ -94,5 +76,5 @@ setTimeout(() => {
 		document.getElementById("qlik").style.display="none";
 	}
 });
-}, 5000);
+}, 1000);
 
