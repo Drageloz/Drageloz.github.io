@@ -30,6 +30,7 @@ var panel = '<div style="height: 100vh; border-left: 10px solid red">'+
 		'<option>Inicio</option>'+
 		'<option>Tiempo por Ciudad</option>'+
 		'<option>Tiempo por Institución</option>'+
+		'<option>Mejores Instituciones</option>'+
 		'</select>'+
 		'</div>'+
 		'</form>'+
