@@ -43,10 +43,12 @@ option{
 }
 
 iframe{
+	position: absolute;
 	height: 93vh;
     border: none;
     padding: 0px;
     margin: 0px;
+    width: 70%;
 }
 
 .loader {
