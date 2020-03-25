@@ -51,6 +51,37 @@ iframe{
     width: 70%;
 }
 
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+#btnCollapse{
+	position: fixed;
+	top: 10px;
+	right: 21vw;
+	z-index: 1;
+	background: transparent;
+	border: transparent;
+}
+
+#btnCollapse:active{
+	border: transparent;
+	box-shadow: 0px;
+}
+
 .collapse1.show{
 	display: block;
 }

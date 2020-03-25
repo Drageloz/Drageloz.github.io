@@ -57,7 +57,8 @@ var dashboard2 ='<h1 style="position: absolute; top: 50px; z-index: 1; margin: 0
 document.getElementById("charging").innerHTML = charging;
 setTimeout(() => {  
 	document.getElementById("charging").style.display = "none";
-	document.getElementById("panel").innerHTML = panel;
+	document.getElementById("controlPanel").style.display = "block";
+	document.getElementById("panel").className = "col-sm-3 collapse1 show";
 	var selectElement = document.getElementById('sel1');
 	document.getElementById("dashboard").innerHTML = dashboard0;
 
@@ -97,6 +98,7 @@ document.getElementById("btnCollapse").addEventListener('click', (event) => {
 		setTimeout(() => { 
 			document.getElementById("panel").className = "col-sm-3 collapse1";
 			document.getElementById("dashboard").className = "col-sm-12";
+			document.getElementById("btnCollapse").style.right = "2vw";
 			for(var i=0; i < document.getElementsByTagName("iframe").length; i++){
 				document.getElementsByTagName("iframe")[i].style.width = "97%"
 		}
@@ -109,6 +111,7 @@ document.getElementById("btnCollapse").addEventListener('click', (event) => {
 		setTimeout(() => { 
 			document.getElementById("panel").className = "col-sm-3 collapse1 show";
 			document.getElementById("dashboard").className = "col-sm-9";
+			document.getElementById("btnCollapse").style = "";
 			for(var i=0; i < document.getElementsByTagName("iframe").length; i++){
 				document.getElementsByTagName("iframe")[i].style.width = "70%"
 		}
