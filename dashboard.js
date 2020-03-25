@@ -110,7 +110,7 @@ document.getElementById("btnCollapse").addEventListener('click', (event) => {
 			document.getElementById("panel").className = "col-sm-3 collapse1 show";
 			document.getElementById("dashboard").className = "col-sm-9";
 			for(var i=0; i < document.getElementsByTagName("iframe").length; i++){
-				document.getElementsByTagName("iframe")[i].style.width = "0%"
+				document.getElementsByTagName("iframe")[i].style.width = "70%"
 		}
 		}, 0.45);
 	}
