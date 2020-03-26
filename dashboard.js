@@ -46,13 +46,14 @@ var dashboard0 = '<div style="padding:15%; height: 100vh;" id="dash1">'+
 				'<h6 style="font:25px normal Segoe UI; padding-left:10%">Las normas científicas, técnicas y administrativas para la investigación en salud están reguladas por la resolución 8430 de 1993, el siguiente programa espera ser una ayuda en las elecciones que como empresa lleven a la mejor eficiencia en el desarrollo de sus protocolos.</h6>'+
 				'</div>';
 				
-var dashboard1 = ' <h1 style="position: absolute; top: 50px; z-index: 1; margin: 0px 12%;">TIEMPO EMPLEADO POR INSTITUCIÓN</h1>'+
-'<div style="position: absolute;top: 90px;z-index: 1;margin: 0px 15%;">Tiempo promedio en el que una institución se demora en completar el protocolo</div>'+
+var dashboard1 = ' <h1 style="position: absolute; top: 50px; z-index: 1; text-align: center; width: 100%;">TIEMPO EMPLEADO POR CIUDAD</h1>'+
+'<div style="position: absolute;top: 90px;z-index: 1; text-align: center; width: 100%;">Tiempo promedio en el que una institución se demora en completar el protocolo</div>'+
 '<div style="position: absolute;top: 25vh;z-index: 1;margin: 0px 60px;font-weight: 780;color: grey;">Promedio duración total de protocolos en días</div>'+
 '<div style="position: absolute; top: 25vh; z-index: 1; right: 50px; margin: 0px 130px 0px 0px;font-weight: 780;color: grey;">Numero de instituciones</div>';
 
-var dashboard2 ='<h1 style="position: absolute; top: 50px; z-index: 1; margin: 0px 12%;">TIEMPO EMPLEADO POR CIUDAD</h1>';
+var dashboard2 ='<h1 style="position: absolute; top: 50px; z-index: 1; text-align: center; width: 100%;">TIEMPO EMPLEADO POR INSTITUCIÓN</h1>';
 		
+var dashboard3 ='<h1 style="position: absolute; top: 50px; z-index: 1; text-align: center; width: 100%;">INSTITUCIONES CON MEJOR PUNTUACIÓN</h1>';
 
 document.getElementById("charging").innerHTML = charging;
 setTimeout(() => {  
