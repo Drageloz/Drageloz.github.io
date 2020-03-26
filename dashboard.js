@@ -95,6 +95,7 @@ document.getElementById("btnCollapse").addEventListener('click', (event) => {
 
 	
 	if(inicio==0){
+		document.getElementById("arrow").className = "left";
 		document.getElementById("panel").className = "collapsing";
 		setTimeout(() => { 
 			document.getElementById("panel").className = "col-sm-3 collapse1";
@@ -107,6 +108,7 @@ document.getElementById("btnCollapse").addEventListener('click', (event) => {
 		inicio = 1;
 	}
 	else{
+		document.getElementById("arrow").className = "right";
 		inicio = 0;
 		document.getElementById("panel").className = "collapsing";
 		setTimeout(() => { 
