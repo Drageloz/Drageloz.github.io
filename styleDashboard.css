@@ -70,7 +70,7 @@ i {
 
 #btnCollapse{
 	position: fixed;
-	top: 10px;
+	top: 60px;
 	right: 21vw;
 	z-index: 1;
 	background: transparent;
