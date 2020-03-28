@@ -31,6 +31,8 @@ var panel = '<div style="height: 100vh; border-left: 10px solid red">'+
 		'<option>Tiempo por Ciudad</option>'+
 		'<option>Tiempo por Institución</option>'+
 		'<option>Mejores Instituciones</option>'+
+		'<option>Protocolos por Investigador</option>'+
+		'<option>Protocolos suspendidos</option>'+
 		'</select>'+
 		'</div>'+
 		'</form>'+
@@ -69,24 +71,48 @@ setTimeout(() => {
 		document.getElementById("qlik").style.display="none";
 		document.getElementById("qlik1").style.display="none";
 		document.getElementById("qlik2").style.display="none";
+		document.getElementById("qlik3").style.display="none";
+		document.getElementById("qlik4").style.display="none";
 	}
 	if(selectElement.selectedIndex==1){
 		document.getElementById("dashboard").innerHTML = dashboard1;
 		document.getElementById("qlik").style.display="block";
 		document.getElementById("qlik1").style.display="none";
 		document.getElementById("qlik2").style.display="none";
+		document.getElementById("qlik3").style.display="none";
+		document.getElementById("qlik4").style.display="none";
 	}
 	if(selectElement.selectedIndex==2){
 		document.getElementById("dashboard").innerHTML = dashboard2;
 		document.getElementById("qlik").style.display="none";
 		document.getElementById("qlik1").style.display="block";
 		document.getElementById("qlik2").style.display="none";
+		document.getElementById("qlik3").style.display="none";
+		document.getElementById("qlik4").style.display="none";
 	}
 	if(selectElement.selectedIndex==3){
 		document.getElementById("dashboard").innerHTML = dashboard3;
 		document.getElementById("qlik").style.display="none";
 		document.getElementById("qlik1").style.display="none";
 		document.getElementById("qlik2").style.display="block";
+		document.getElementById("qlik3").style.display="none";
+		document.getElementById("qlik4").style.display="none";
+	}
+	if(selectElement.selectedIndex==4){
+		document.getElementById("dashboard").innerHTML = dashboard3;
+		document.getElementById("qlik").style.display="none";
+		document.getElementById("qlik1").style.display="none";
+		document.getElementById("qlik2").style.display="none";
+		document.getElementById("qlik3").style.display="block";
+		document.getElementById("qlik4").style.display="none";
+	}
+	if(selectElement.selectedIndex==5){
+		document.getElementById("dashboard").innerHTML = dashboard3;
+		document.getElementById("qlik").style.display="none";
+		document.getElementById("qlik1").style.display="none";
+		document.getElementById("qlik2").style.display="none";
+		document.getElementById("qlik3").style.display="none";
+		document.getElementById("qlik4").style.display="block";
 	}
 });
 }, 1000);
