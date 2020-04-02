@@ -52,6 +52,7 @@ setTimeout(() => {
 		document.getElementById("qlik2").style.display="none";
 		document.getElementById("qlik3").style.display="none";
 		document.getElementById("qlik4").style.display="none";
+		document.getElementById("qlik5").style.display="none";
 	}
 	if(selectElement.selectedIndex==1){
 		document.getElementById("dashboard").innerHTML = dashboard1;
@@ -60,6 +61,7 @@ setTimeout(() => {
 		document.getElementById("qlik2").style.display="none";
 		document.getElementById("qlik3").style.display="none";
 		document.getElementById("qlik4").style.display="none";
+		document.getElementById("qlik5").style.display="none";
 	}
 	if(selectElement.selectedIndex==2){
 		document.getElementById("dashboard").innerHTML = dashboard2;
@@ -68,6 +70,7 @@ setTimeout(() => {
 		document.getElementById("qlik2").style.display="none";
 		document.getElementById("qlik3").style.display="none";
 		document.getElementById("qlik4").style.display="none";
+		document.getElementById("qlik5").style.display="none";
 	}
 	if(selectElement.selectedIndex==3){
 		document.getElementById("dashboard").innerHTML = dashboard3;
@@ -76,6 +79,7 @@ setTimeout(() => {
 		document.getElementById("qlik2").style.display="block";
 		document.getElementById("qlik3").style.display="none";
 		document.getElementById("qlik4").style.display="none";
+		document.getElementById("qlik5").style.display="none";
 	}
 	if(selectElement.selectedIndex==4){
 		document.getElementById("dashboard").innerHTML = dashboard3;
@@ -84,6 +88,7 @@ setTimeout(() => {
 		document.getElementById("qlik2").style.display="none";
 		document.getElementById("qlik3").style.display="block";
 		document.getElementById("qlik4").style.display="none";
+		document.getElementById("qlik5").style.display="none";
 	}
 	if(selectElement.selectedIndex==5){
 		document.getElementById("dashboard").innerHTML = dashboard3;
@@ -92,6 +97,15 @@ setTimeout(() => {
 		document.getElementById("qlik2").style.display="none";
 		document.getElementById("qlik3").style.display="none";
 		document.getElementById("qlik4").style.display="block";
+		document.getElementById("qlik5").style.display="none";
+	}
+	if(selectElement.selectedIndex==6){
+		document.getElementById("qlik").style.display="none";
+		document.getElementById("qlik1").style.display="none";
+		document.getElementById("qlik2").style.display="none";
+		document.getElementById("qlik3").style.display="none";
+		document.getElementById("qlik4").style.display="none";
+		document.getElementById("qlik5").style.display="block";
 	}
 });
 }, 1000);
