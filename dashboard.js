@@ -100,6 +100,7 @@ setTimeout(() => {
 		document.getElementById("qlik5").style.display="none";
 	}
 	if(selectElement.selectedIndex==6){
+		document.getElementById("dashboard").innerHTML = "";
 		document.getElementById("qlik").style.display="none";
 		document.getElementById("qlik1").style.display="none";
 		document.getElementById("qlik2").style.display="none";
