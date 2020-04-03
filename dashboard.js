@@ -36,6 +36,14 @@ var dashboard2 ='<h1 style="position: absolute; top: 50px; z-index: 1; text-alig
 		
 var dashboard3 ='<h1 style="position: absolute; top: 50px; z-index: 1; text-align: center; width: 100%;">INSTITUCIONES CON MEJOR PUNTUACIÓN</h1>';
 
+var dashboard4 ='<h1 style="position: absolute; top: 50px; z-index: 1; text-align: center; width: 100%;">NÚMERO DE PROTOCOLOS POR INVESTIGADOR</h1>';
+
+var dashboard5 ='<h1 style="position: absolute; top: 50px; z-index: 1; text-align: center; width: 100%;">NÚMERO Y RAZÓN DE PROTOCOLOS SUSPENDIDOS</h1>';
+
+var dashboard6 ='<h1 style="position: absolute; top: 50px; z-index: 1; text-align: center; width: 100%;">POBLACIÓN OBJETO</h1>';
+
+var dashboard7 ='<h1 style="position: absolute; top: 50px; z-index: 1; text-align: center; width: 100%;">PROTOCOLOS POR DÍA E INSTITUCIÓN</h1>';
+
 document.getElementById("charging").innerHTML = charging;
 setTimeout(() => {  
 	document.getElementById("charging").style.display = "none";
@@ -86,7 +94,7 @@ setTimeout(() => {
 		document.getElementById("qlik6").style.display="none";
 	}
 	if(selectElement.selectedIndex==4){
-		document.getElementById("dashboard").innerHTML = dashboard3;
+		document.getElementById("dashboard").innerHTML = dashboard4;
 		document.getElementById("qlik").style.display="none";
 		document.getElementById("qlik1").style.display="none";
 		document.getElementById("qlik2").style.display="none";
@@ -96,7 +104,7 @@ setTimeout(() => {
 		document.getElementById("qlik6").style.display="none";
 	}
 	if(selectElement.selectedIndex==5){
-		document.getElementById("dashboard").innerHTML = dashboard3;
+		document.getElementById("dashboard").innerHTML = dashboard5;
 		document.getElementById("qlik").style.display="none";
 		document.getElementById("qlik1").style.display="none";
 		document.getElementById("qlik2").style.display="none";
@@ -106,7 +114,7 @@ setTimeout(() => {
 		document.getElementById("qlik6").style.display="none";
 	}
 	if(selectElement.selectedIndex==6){
-		document.getElementById("dashboard").innerHTML = "";
+		document.getElementById("dashboard").innerHTML = dashboard6;
 		document.getElementById("qlik").style.display="none";
 		document.getElementById("qlik1").style.display="none";
 		document.getElementById("qlik2").style.display="none";
@@ -116,7 +124,7 @@ setTimeout(() => {
 		document.getElementById("qlik6").style.display="none";
 	}
 	if(selectElement.selectedIndex==7){
-		document.getElementById("dashboard").innerHTML = "";
+		document.getElementById("dashboard").innerHTML = dashboard7;
 		document.getElementById("qlik").style.display="none";
 		document.getElementById("qlik1").style.display="none";
 		document.getElementById("qlik2").style.display="none";
